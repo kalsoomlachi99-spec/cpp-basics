@@ -2,27 +2,18 @@
 using namespace std;
 
 int main() {
-    cout << "Hello VS Code!" << endl;
 
-    /*----------------------------------*/
+    /*square patterns*/
 
-    /*checking if a number is even or odd*/
+int num = 1 , n = 3;
 
-int num = 6;
-if (num%2 == 0){
-    cout << num << " is an even number";
-} else { 
-        cout << num << "is an odd number";
-
+for (int i = 0; i<n; i++){
+    for(int j = 0; j<n ; j++){
+        cout << num <<" "; 
+        num++;
+    }
+    cout << endl;
 }
-
-    /*----------------------------------*/
-
-int num = 3;
-
-
-
-
 
     return 0;
 }
