@@ -8,7 +8,7 @@ int main() {
 
     /*checking if a number is even or odd*/
 
-int num = 5;
+int num = 6;
 if (num%2 == 0){
     cout << num << " is an even number";
 } else { 
@@ -17,6 +17,8 @@ if (num%2 == 0){
 }
 
     /*----------------------------------*/
+
+int num = 3;
 
 
 
