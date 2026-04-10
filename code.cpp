@@ -3,17 +3,17 @@ using namespace std;
 
 int main() {
 
-    /*square patterns*/
+/*maximum out of four integers using conditional operator*/
 
-int num = 1 , n = 3;
+int s = 13, m = 18, k = 307, u = 30;
 
-for (int i = 0; i<n; i++){
-    for(int j = 0; j<n ; j++){
-        cout << num <<" "; 
-        num++;
-    }
-    cout << endl;
-}
+int max1 = (s>m)? s : m;
+int max2 = (k>u)? k : u;
+int max = (max1>max2)? max1 : max2;
+
+cout <<"Maximum out of given four integer is " << max <<"!" << endl;
+
+
 
     return 0;
 }
