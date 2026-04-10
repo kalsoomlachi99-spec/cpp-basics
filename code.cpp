@@ -1,19 +1,13 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 int main() {
+    char str[] = {'a','b','c' ,'\0'};
+    cout << str << endl << strlen(str) << endl;
 
-/*maximum out of four integers using conditional operator*/
-
-int s = 13, m = 18, k = 307, u = 30;
-
-int max1 = (s>m)? s : m;
-int max2 = (k>u)? k : u;
-int max = (max1>max2)? max1 : max2;
-
-cout <<"Maximum out of given four integer is " << max <<"!" << endl;
-
-
+    char arr[] = "hello";
+    cout << arr << endl << strlen(arr) ;  
 
     return 0;
 }
