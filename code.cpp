@@ -3,11 +3,17 @@
 using namespace std;
 
 int main() {
-    char str[] = {'a','b','c' ,'\0'};
-    cout << str << endl << strlen(str) << endl;
 
-    char arr[] = "hello";
-    cout << arr << endl << strlen(arr) ;  
+/*input and output*/
+
+char arr[50];
+
+cout << "enter a character array :";
+cin.getline(arr, 50);
+
+cout << "output is :" << arr << endl;
+
+
 
     return 0;
 }
