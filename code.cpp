@@ -1,24 +1,26 @@
 #include <iostream>
 using namespace std;
 
-int linearSearch(int mat[][3], int rows, int cols, int key){ //no of cols is important here! 
-  for (int i = 0; i<rows; i++){
-    for (int j = 0; j<cols; j++){
-        if(mat[i][j]==key){
-           return mat[i][j] ;
+int getMaxSum(int mat[][3], int rows, int cols){
+    int maxColSum = INT_MIN;
+
+    for(int j=0; j<cols; j++){
+        int colSum = 0;
+        for (int i=0; i<rows; i++){
+            colSum += mat[i][j];
         }
+        maxColSum = max(maxColSum , colSum);
     }
+    return maxColSum;
 }
-return -1;
-}
 
-int main() {
+int main(){
+    int matrix[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+    int rows =3;
+    int cols = 3;
 
-int matrix[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
-int rows = 3;
-int cols = 3;
+    cout << getMaxSum(matrix, rows, cols) << endl;
 
-cout << linearSearch(matrix, rows, cols, 7);
 
 
     return 0;
