@@ -2,7 +2,7 @@
 using namespace std;    
 int main (){
   
-    /*Number guessing game project version 2*/
+    /*Number guessing game project version 3 (keep guessing until correct)*/
 
     int secret_Num = 7;
     int guess_Num;
@@ -10,14 +10,21 @@ int main (){
     cout << "To play game guess a number: ";
     cin >> guess_Num;
  
-    if (guess_Num == secret_Num){
-        cout << "Congratulations! You guessed the number.";
+    while (guess_Num != secret_Num){
+        if (guess_Num > secret_Num)
+        {
+            cout << "Too high! ";
+        }
+        else
+        {
+            cout << "Too low! ";
+        }
+        cout << "Wrong guess, try again: ";
+        cin >> guess_Num;
     }
-    else if (guess_Num < secret_Num){
-        cout << "Too low! Try again.";
-    }
-    else {
-        cout << "Too high! Try again.";
-    }
+
+    cout << "Congratulations! You guessed the number." << endl;
+
+    return 0;
 
 }
