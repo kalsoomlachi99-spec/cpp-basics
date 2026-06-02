@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-   
+   // Testing GitHub account
 /*is a number prime or not*/
 
 int n;
