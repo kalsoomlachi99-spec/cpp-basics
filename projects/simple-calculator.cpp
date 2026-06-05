@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
 
-    /*A Simple Calculator*/
+    /*Bulding Up A Simple Calculator*/
 
     int a , b ;
     char op;
