@@ -45,7 +45,5 @@ int main(){
     
     cout << "\nThanks for using a simple calulator!";
 
-
-
     return 0;
 }
