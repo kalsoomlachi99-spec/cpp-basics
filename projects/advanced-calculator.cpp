@@ -33,12 +33,15 @@ int main(){
     case  '+' :
     cout << "Result: " << a << " + " << b << " = " << a+ b ;
     break;
+
     case '-' :
     cout << "Result: " << a << " - " << b << " = " << a - b ;
     break;
+
     case  '*' :
     cout << "Result: " << a << " * " << b << " = " << a * b ;
     break;
+    
     case '%' :
     if ( b == 0){
         cout << "Error: Cannot perform modulus with zero.";
@@ -47,6 +50,7 @@ int main(){
         cout << "Result: " << (int)a << " % " << (int)b << " = " << (int)a % (int)b ;
     }
     break;
+
     case '/' :
     if ( b == 0){
         cout << "Error: Cannot divide by zero.";
@@ -54,9 +58,11 @@ int main(){
     cout << "Result: " << a << " / " << b << " = " << a / b ;
     }
     break;
+
     case '^' :
     cout << "Result: " << a << " ^ " << b << " = " << pow(a,b) ;
     break;
+    
     default :
     cout << "Invalid calculation!" ;
     break;
@@ -73,7 +79,6 @@ int main(){
         cout << "\nInvalid choice! Exiting the calculator...\n";
         break;
     }
-
 
 } while (choice != 'n' && choice != 'N');
     
