@@ -3,14 +3,14 @@ using namespace std;
 
 float area_of_triangle ( float length , float height){
 
-    float area = height * length ;
+    float area = ( 1 / 2 ) * ( height * length );
 
     return area ;
 }
 
 int main (){
 
-    /*Finding out area of a trinagle*/
+    /*Finding out area of a triangle*/
 
     float length , height;
 
