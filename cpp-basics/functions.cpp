@@ -145,25 +145,6 @@ int sumOfPrimes(int num){
 
 
 
-
-// int sumOfNPrimes(int n){
-//     int sum = 0;
-//     int count = 0;
-//     int num = 2;
-
-//     while (count < n){
-//         if (isPrimes(num)){
-//             sum += num;
-//             count++;
-//         }
-//         num++;
-//     }
-//     return sum;
-// }
-
-
-
-
 int main(){
 
     // funtion call / invoke
@@ -176,7 +157,7 @@ int main(){
 //  cout << nCR(4 , 2) << endl;  // nCr binomial coefficient for n and r (my version)
 //  cout << nCr(4 , 2) << endl;  // nCr binomial coefficient for n and r
 //  cout << prime(5) << endl; // prime number checker
-cout << sumOfPrimes(10) << endl; // sum of n prime numbers
+// cout << sumOfPrimes(10) << endl; // sum of n prime numbers
 
  return 0;
 }

@@ -20,7 +20,7 @@ if(n <= 1){
        break;
     } 
   }
-}
+}       
 
 if ( isPrime == true ) {
     cout << "prime number";
