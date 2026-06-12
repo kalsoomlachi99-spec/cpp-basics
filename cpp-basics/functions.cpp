@@ -147,9 +147,7 @@ int sumOfPrimes(int num){
 double fibonacci (int n){
     if (n == 0 ){
         return 0;
-     } // else if (n == 1){
-    //     return 1;
-    // }
+     } 
 
     int first = 0;
     int second = 1; 
@@ -177,7 +175,7 @@ int main(){
 //  cout << nCr(4 , 2) << endl;  // nCr binomial coefficient for n and r
 //  cout << prime(5) << endl; // prime number checker
 // cout << sumOfPrimes(10) << endl; // sum of n prime numbers
-cout << fibonacci(8) << endl;  //  calculate nth fibonacci number
+cout << fibonacci(1) << endl;  //  calculate nth fibonacci number
 
 
 
