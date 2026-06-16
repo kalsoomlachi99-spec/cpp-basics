@@ -11,12 +11,12 @@ int main (){
     int guess_Num;
     int attempts = 0;
     bool won = false;
-
-     cout << "Guess a number between 1 and 100: ";
+     
+    cout << "Guess a number between 1 and 100: ";
     cin >> guess_Num;
     attempts++;
    
-    while (guess_Num != secret_Num){
+    while (guess_Num  != secret_Num){
         
         if (guess_Num > secret_Num) {
             cout << "Too high! ";
