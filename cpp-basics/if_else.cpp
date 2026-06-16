@@ -59,7 +59,7 @@ int main(){
             }
     }
      
-    // calculating of net salary 
+    // calculating net salary 
     float salary;
 
     cout << "\nEnter your basic salary in $: ";
