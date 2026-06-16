@@ -5,7 +5,7 @@ using namespace std;
 // function definition
 
 // minimum two numbers
-double min_of_two_numbers (double a, double b){
+int minOfTwoNumbers (int a, int b){
 
     if ( a < b ) {
         return a;
@@ -16,7 +16,7 @@ double min_of_two_numbers (double a, double b){
 }
 
 // sum of two numbers
-double sum_of_two_numbers (double a, double b){
+int sumOfTwoNumbers (int a, int b){
     return a + b;
 }
 
@@ -164,18 +164,21 @@ int fibonacci (int n){
 
 int main(){
 
+    int a = 24;
+    int b = 162;
+
     // funtion call / invoke
  
- cout << "Minimum of two number is: " << min_of_two_numbers(4.5, 3.5) << endl;  // min of two numbers
- cout << "sum = " << sum_of_two_numbers(1.3, 2.5) << endl; // sum of two numbers      
- cout << "Sum on n numbers is: " << sumOfNum(49) << endl; // sum of numbers from 1 to n
- cout << "N factorial: " << nFact(4) << endl ;  // N factorial
- cout << sumOfDigit(1234) << endl;  // sum of digits of a number
- cout << nCR(4 , 2) << endl;  // nCr binomial coefficient for n and r (my version)
- cout << nCr(4 , 2) << endl;  // nCr binomial coefficient for n and r
- cout << prime(5) << endl; // prime number checker
-cout << sumOfPrimes(10) << endl; // sum of n prime numbers
-cout << fibonacci(1) << endl;  //  calculate nth fibonacci number
+ cout << "Minimum of " << a << " & " << b << " is: " << minOfTwoNumbers(a, b) << endl;  // min of two numbers
+ cout << "sum of " << a << " & " << b << " = " << sumOfTwoNumbers(a, b) << endl; // sum of two numbers      
+ cout << "Sum of numbers from 1 to" << a << " is: " << sumOfNum(a) << endl; // sum of numbers from 1 to n
+ cout << "Factorial of " << a << " is " << nFact(a) << endl ;  // N factorial
+ cout << "Sum of digits of " << b << " is " << sumOfDigit(b) << endl;  // sum of digits of a number
+ cout << "Binomial coefficient of " << a << "&"  << b << " is " << nCR(a , b) << endl;  // nCr binomial coefficient for n and r (my version)
+ cout << "Binomial coefficient of " << a << "&"  << b << " is " << nCr(a , b) << endl;  // nCr binomial coefficient for n and r
+ cout << a << " is a " << prime(a) << " number " << endl; // prime number checker
+ cout << "Sum of prime numbers from 2 to " << a << " is " << sumOfPrimes(a) << endl; // sum of n prime numbers
+ cout << "The " << a << "th fibonacci number is " << fibonacci(a) << endl;  //  calculate nth fibonacci number
 
 
 
