@@ -43,6 +43,35 @@ int main(){
         cout << "\nInvalid alphabet";
     }
 
+    // division of students according to their marks percentage
+    int percentage;
+
+    cout << "\nEnter your marks percentage (between 0 and 100): ";
+    cin >> percentage;
+   
+    while(percentage >= 100){
+        cout << "\nInvalid percentage! Please enter percentage less than or equal to 100. ";
+         cin >> percentage;
+            if (percentage >= 60){
+                cout << "Ist Division";
+            } else {
+                cout << "2nd Division";
+            }
+    }
+     
+    // calculating of net salary 
+    float salary;
+
+    cout << "\nEnter your basic salary in $: ";
+    cin >> salary;
+
+    if(salary >= 10000){
+        salary = salary + salary * 0.15;
+        cout << "net salary is : " << salary;
+    } else {
+        salary = salary + salary * 0.07;
+        cout << "net salary is : " << salary << "$";
+    }
 
 
   return 0;
