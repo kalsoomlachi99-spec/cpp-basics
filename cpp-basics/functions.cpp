@@ -59,22 +59,22 @@ int sumOfDigit(int num){
 
 // calculate nCr binomial coefficient for n and r (my version)
 
-int nCR(int n , int r){
-    int nFact = 1;
-    int rFact = 1;
-    int n_rFact = 1;
+long long nCR(long long n , long long r){
+    long long nFact = 1;
+    long long rFact = 1;
+    long long n_rFact = 1;
 
-    for (int i = 1; i <= n; i++) { // n factorial
+    for (long long i = 1; i <= n; i++) { // n factorial
         nFact *= i;
     }
 
-    for (int j = 1; j <= r; j++) {  // r factorial
+    for (long long j = 1; j <= r; j++) {  // r factorial
         rFact *= j;
     }
   
-    int n_r = n - r;
+    long long n_r = n - r;
 
-    for (int k = 1; k <= r; k++) {  // n-r factorial
+    for (long long k = 1; k <= n_r; k++) {  // n-r factorial
         n_rFact *= k;
     }
    
@@ -83,8 +83,8 @@ int nCR(int n , int r){
 
 // calculate nCr binomial coefficient for n and r 
 
-int factorial (int n){
-    int fact = 1;
+long long factorial (int n){
+    long long fact = 1;
     for (int i = 1; i <= n ; i++){
         fact *= i;
     } 
@@ -92,9 +92,14 @@ int factorial (int n){
 }
 
 int nCr (int n , int r){
-    int nFact = factorial(n);
-    int rFact = factorial(r);
-    int n_rFact = factorial(n-r);
+    if(r > n){
+    return 0;
+    }
+
+    long long nFact = factorial(n);
+    long long rFact = factorial(r);
+    long long n_rFact = factorial(n-r);
+    
     return nFact / ( rFact * n_rFact );
 
 }
@@ -145,14 +150,13 @@ int sumOfPrimes(int num){
 // write a function to calculate nth fibonacci number
 
 int fibonacci (int n){
-    if (n == 0 ){
-        return 0;
-     } 
+    if (n == 0 ) return 0;
+    if (n == 1) return 1;
 
     int first = 0;
     int second = 1; 
 
-    for (int i = 0; i < n; i++ ){
+    for (int i = 2; i <= n; i++ ){
         
         int next = first + second;
         first = second;
@@ -164,8 +168,8 @@ int fibonacci (int n){
 
 int main(){
 
-    int a = 24;
-    int b = 162;
+    int a = 13;
+    int b = 11;
 
     // funtion call / invoke
  

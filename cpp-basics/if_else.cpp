@@ -34,7 +34,7 @@ int main(){
     cout << "\nEnter an alphabet: ";
     cin >> ch;
     
-    if (ch >= 65 && ch <= 96) {
+    if (ch >= 65 && ch <= 90) {
         cout << "\nThe alphabet you entered is upper case .";
     } else if (ch >= 97 && ch <= 122){
         cout << "\nThe alphabet you entered is lower case .";
@@ -49,16 +49,16 @@ int main(){
     cout << "\nEnter your marks percentage (between 0 and 100): ";
     cin >> percentage;
    
-    while(percentage >= 100){
-        cout << "\nInvalid percentage! Please enter percentage less than or equal to 100. ";
-         cin >> percentage;
-            if (percentage >= 60){
-                cout << "Ist Division";
-            } else {
-                cout << "2nd Division";
-            }
+    while (percentage < 0 || percentage > 100) {
+        cout << "Invalid input. Please enter a percentage between 0 and 100: ";
+        cin >> percentage;
     }
-     
+    if(percentage >= 60){
+        cout << "Ist division";
+    } else {
+        cout << "2nd division";
+    }
+
     // calculating net salary 
     float salary;
 
