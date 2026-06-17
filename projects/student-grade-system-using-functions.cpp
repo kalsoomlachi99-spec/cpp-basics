@@ -43,6 +43,29 @@ char grade(float percentage){ // grade
         return 'F';
 }
 
+string remarks(char grade){
+    switch (grade){
+        case 'A' : 
+        return "Outstanding";
+        break;
+        case 'B' :
+        return "Great";
+        break;
+        case 'C' :
+        return "Good";
+        break;
+        case 'D' :
+        return "Fair";
+        break; 
+        case 'F' :
+        return "Fail";
+        break;
+        default :
+        return "Invalid grade";
+    }
+   
+}
+
 int main(){
 
     string name;
@@ -63,6 +86,8 @@ int main(){
     cout << "\nPercentage: " << percentage(total, sub) << "%";
 
     cout << "\nGrade: " << grade(percent) ;
+
+    cout << "\nRemarks: " << remarks(grade(percent)) << endl;
 
     return 0;
 }
