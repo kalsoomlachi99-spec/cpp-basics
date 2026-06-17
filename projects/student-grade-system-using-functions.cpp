@@ -14,14 +14,14 @@ float totalMarks(int n){  // total marks
     for (int i = 1; i <= n; i++){
         cout << "Subject " << i << ":- ";
         cin >> marks;
-        if (marks < 0 || marks > 100){
-            cout << "Invalid marks. Please enter marks between 0 and 100!";
+
+        while (marks < 0 || marks > 100){
+            cout << "Invalid marks. Please enter marks between 0 and 100: ";
             cin >> marks;
-        } 
+        }
+
         total += marks;
     }
-
-    cout << "\nYour total marks are: ";
 
     return total;
 }
@@ -63,7 +63,6 @@ string remarks(char grade){
         default :
         return "Invalid grade";
     }
-   
 }
 
 int main(){
@@ -77,17 +76,22 @@ int main(){
     cout << "Enter number of subjects: ";
     cin >> sub;
 
+    while (sub <= 0){
+        cout << "Invalid number of subjects. Please enter a number greater than 0: ";
+        cin >> sub;
+    }
+
     float total = totalMarks(sub);
+    float percent = percentage(total , sub);
+    char finalGrade = grade(percent);
 
     cout << "\nTotal Marks: " << total;
 
-    float percent = percentage(total , sub);
+    cout << "\nPercentage: " << percent << "%";
 
-    cout << "\nPercentage: " << percentage(total, sub) << "%";
+    cout << "\nGrade: " << finalGrade;
 
-    cout << "\nGrade: " << grade(percent) ;
-
-    cout << "\nRemarks: " << remarks(grade(percent)) << endl;
+    cout << "\nRemarks: " << remarks(finalGrade) << endl;
 
     return 0;
 }
