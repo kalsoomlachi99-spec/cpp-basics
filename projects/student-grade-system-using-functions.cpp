@@ -9,7 +9,7 @@ float totalMarks(int n){  // total marks
     float marks;
     float total = 0;
 
-    cout << "\nEnter your " << n <<" subject marks (between 0 and 100): " << endl ;
+    cout << "\nEnter " << n <<" subject marks (between 0 and 100): " << endl ;
 
     for (int i = 1; i <= n; i++){
         cout << "Subject " << i << ":- ";
@@ -67,31 +67,36 @@ string remarks(char grade){  // remarks
 
 int main(){
 
-    string name;
-    cout << "Enter your name:";
-    cin >> name;
+    int n;
+    cout << "How many students are there?";
+    cin >> n;
 
-    int sub;
-
-    cout << "Enter number of subjects: ";
-    cin >> sub;
-
-    while (sub <= 0){
-        cout << "Invalid number of subjects. Please enter a number greater than 0: ";
+    for (int i = 1; i <= n; i++){
+        cout << "Record of " << i << " student:" << endl;
+        string name;
+        cout << "Enter student name:";
+        cin >> name;
+        
+        int sub;
+        cout << "Enter number of subjects: ";
         cin >> sub;
+        while (sub <= 0){
+            cout << "Invalid number of subjects. Please enter a number greater than 0: ";
+            cin >> sub;
+        }
+        
+        float total = totalMarks(sub);
+        float percent = percentage(total , sub);
+        char finalGrade = grade(percent);
+
+        cout << "\nResult of " << name << ":" << endl;
+
+        cout << "\nTotal Marks: " << total; // total marks
+        cout << "\nPercentage: " << percent << "%"; // percentage
+        cout << "\nGrade: " << finalGrade; // grade
+        cout << "\nRemarks: " << remarks(finalGrade) << endl; // remarks
+
     }
-
-    float total = totalMarks(sub);
-    float percent = percentage(total , sub);
-    char finalGrade = grade(percent);
-
-    cout << "\nTotal Marks: " << total; // total marks
-
-    cout << "\nPercentage: " << percent << "%"; // percentage
-
-    cout << "\nGrade: " << finalGrade; // grade
-
-    cout << "\nRemarks: " << remarks(finalGrade) << endl; // remarks
 
     return 0;
 }
