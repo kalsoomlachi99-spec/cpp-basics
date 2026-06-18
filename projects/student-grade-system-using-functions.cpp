@@ -9,7 +9,7 @@ float totalMarks(int n){  // total marks
     float marks;
     float total = 0;
 
-    cout << "\nEnter " << n <<" subject marks (between 0 and 100): " << endl ;
+    cout << "\nEnter subject(s) marks (between 0 and 100): " << endl ;
 
     for (int i = 1; i <= n; i++){
         cout << "Subject " << i << ":- ";
@@ -68,13 +68,13 @@ string remarks(char grade){  // remarks
 int main(){
 
     int n;
-    cout << "How many students are there?";
+    cout << "How many students are there? ";
     cin >> n;
 
     for (int i = 1; i <= n; i++){
-        cout << "Record of " << i << " student:" << endl;
+        cout << "\nRecord of " << i << " student:" << endl;
         string name;
-        cout << "Enter student name:";
+        cout << "Enter " << i << " student name: ";
         cin >> name;
         
         int sub;
