@@ -47,19 +47,14 @@ string remarks(char grade){  // remarks
     switch (grade){
         case 'A' : 
         return "Outstanding";
-        break;
         case 'B' :
         return "Great";
-        break;
         case 'C' :
         return "Good";
-        break;
         case 'D' :
         return "Fair";
-        break; 
-        case 'F' :
+        case 'E' :
         return "Fail";
-        break;
         default :
         return "Invalid grade";
     }

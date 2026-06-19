@@ -1,11 +1,14 @@
 #include<iostream>
 using namespace std;
 
-float area_of_triangle ( float length , float height){
+float areaOfTriangle ( float l , float h){
 
-    float area = ( 1 / 2 ) * ( height * length );
+    float length , height;
 
-    return area ;
+    cout << "enter length and height";
+    cin >> length >> height ;
+
+    return (1/2) * (length*height) ;
 }
 
 int main (){
@@ -22,7 +25,7 @@ int main (){
     cout << "\nEnter height: ";
     cin >> height;
 
-    cout << "\nArea of triangle is " << area_of_triangle(length , height ) << " sqr units";
+    cout << "\nArea of triangle is " << areaOfTriangle(length , height ) << " sqr units";
 
      
     return 0;

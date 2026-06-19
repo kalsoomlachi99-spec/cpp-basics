@@ -53,14 +53,14 @@ int main(){
     } else if (percentage >= 50){
         grade = "D";
     } else {
-        grade = "F";
+        grade = "E";
     }   
 
     cout << "\nTotal Marks: " << total << "/ 500" << endl;
     cout << "Percentage: " << percentage << "%" << endl;    
     cout << "Grade: " << grade << endl;
 
-    if (grade != "F") {
+    if (grade != "E") {
         cout << "Result : pass";
     } else {
         cout << "Result : fail";
