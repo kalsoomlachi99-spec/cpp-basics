@@ -5,6 +5,14 @@ using namespace std;
 
 // student grade calculation system using functions
 
+struct Student{
+    string name;
+    float total;
+    float percent;
+    char grade;
+    string remark;
+};
+
 int getPositiveInt(string prompt){
     int value;
 
