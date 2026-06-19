@@ -1,32 +1,65 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-float areaOfTriangle ( float l , float h){
+double areaOfTriangle(){  // area of triangle
 
-    float length , height;
+    double bredth , height;
 
-    cout << "enter length and height";
-    cin >> length >> height ;
-
-    return (1/2) * (length*height) ;
-}
-
-int main (){
-
-    /*Finding out area of a triangle*/
-
-    float length , height;
-
-    cout << "\nTo find area of triangle enter length and height.\n" ;
-     
-    cout << "\nEnter lenght: " ;
-    cin >> length;
-
-    cout << "\nEnter height: ";
+    cout << "For area of triangle enter bredth and height.\n";
+    cout << "lenght: ";
+    cin >> bredth;
+    cout << "height: ";
     cin >> height;
 
-    cout << "\nArea of triangle is " << areaOfTriangle(length , height ) << " sqr units";
+    double area = (1.0/2)*(bredth*height);
 
-     
+    return area;
+}
+
+double areaOfSquare(){  // area of square
+
+    double bredth , height;
+
+    cout << "For area of square enter bredth and height.\n";
+    cout << "bredth: ";
+    cin >> bredth;
+    cout << "height: ";
+    cin >> height;
+
+    double area = (bredth*height);
+
+    return area;
+}
+
+double volume(){  //volume
+
+    double bredth, height , lenght;
+
+    cout << "For area of square enter bredth , length and height.\n";
+    cout << "bredth: ";
+    cin >> bredth;
+    cout << "length: ";
+    cin >> lenght;
+    cout << "height: ";
+    cin >> height;
+
+    double area = (bredth*height*lenght);
+
+    return area;
+
+}
+
+
+int main() {
+
+   double areaoftriangle = areaOfTriangle();
+   cout << "area of triangle = " << areaoftriangle;
+
+   double areaofsquare = areaOfSquare();
+   cout << "area of square = " << areaofsquare; 
+   
+   double Volume = volume();
+   cout << "volume = " << Volume;
+    
     return 0;
 }

@@ -1,6 +1,8 @@
 #include <iostream>
 #include <limits>
 #include <string>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 // student grade calculation system using functions
@@ -12,6 +14,8 @@ struct Student{
     char grade;
     string remark;
 };
+vector<Student> students;
+
 
 int getPositiveInt(string prompt){
     int value;
@@ -87,7 +91,12 @@ string remarks(char grade){  // remarks
     }
 }
 
+bool compareByPercentage(Student a, Student b) {
+    return a.percent > b.percent;
+}
+
 int main(){
+
 
     int n = getPositiveInt("How many students are there? ");
 
@@ -111,7 +120,16 @@ int main(){
         cout << "\nGrade: " << finalGrade; // grade
         cout << "\nRemarks: " << remarks(finalGrade) << endl; // remarks
 
+        Student s;
+        s.name = name;
+        s.total = total;
+        s.percent = percent;
+        s.grade = finalGrade;
+        s.remark = remarks(finalGrade);
+        students.push_back(s);
     }
+
+     sort(students.begin(), students.end(), compareByPercentage);
 
     return 0;
 }
