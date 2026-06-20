@@ -20,7 +20,7 @@ double areaOfSquare(){  // area of square
 
     double bredth , height;
 
-    cout << "For area of square enter bredth and height.\n";
+    cout << "\nFor area of square enter bredth and height.\n";
     cout << "bredth: ";
     cin >> bredth;
     cout << "height: ";
@@ -35,7 +35,7 @@ double volume(){  //volume
 
     double bredth, height , lenght;
 
-    cout << "For area of square enter bredth , length and height.\n";
+    cout << "\nFor area of square enter bredth , length and height.\n";
     cout << "bredth: ";
     cin >> bredth;
     cout << "length: ";
@@ -53,13 +53,12 @@ double volume(){  //volume
 int main() {
 
    double areaoftriangle = areaOfTriangle();
-   cout << "area of triangle = " << areaoftriangle;
-
    double areaofsquare = areaOfSquare();
-   cout << "area of square = " << areaofsquare; 
-   
    double Volume = volume();
-   cout << "volume = " << Volume;
+
+   cout << "\narea of triangle = " << areaoftriangle;
+   cout << "\narea of square = " << areaofsquare;   
+   cout << "\nvolume = " << Volume;
     
     return 0;
 }

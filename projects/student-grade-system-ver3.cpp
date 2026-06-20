@@ -3,12 +3,14 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <iomanip>
 using namespace std;
 
 // student grade calculation system using functions
 
 struct Student{
     string name;
+    int subjects;
     float total;
     float percent;
     char grade;
@@ -58,7 +60,7 @@ float totalMarks(int n){  // total marks
 }
 
 float percentage(float total, int n){ // percentage
-    return (total / (n * 100)) * 100;
+    return total / n ;
 }
 
 char grade(float percentage){ // grade
@@ -84,19 +86,20 @@ string remarks(char grade){  // remarks
             return "Good";
         case 'D' :
             return "Fair";
-        case 'E' :
+        case 'F' :
             return "Fail";
         default :
             return "Invalid grade";
     }
 }
 
-bool compareByPercentage(Student a, Student b) {
+bool compareByPercentage(const Student& a, const Student& b){
     return a.percent > b.percent;
 }
 
 int main(){
 
+    cout << fixed << setprecision(2);
 
     int n = getPositiveInt("How many students are there? ");
 
@@ -108,13 +111,12 @@ int main(){
         getline(cin, name);
         
         int sub = getPositiveInt("Enter number of subjects: ");
-         
         float total = totalMarks(sub);
         float percent = percentage(total , sub);
         char finalGrade = grade(percent);
 
         cout << "\nResult of " << name << ":" << endl;
-
+        cout << "\n Subjects: " << sub; // number of subjects   
         cout << "\nTotal Marks: " << total; // total marks
         cout << "\nPercentage: " << percent << "%"; // percentage
         cout << "\nGrade: " << finalGrade; // grade
@@ -122,14 +124,37 @@ int main(){
 
         Student s;
         s.name = name;
+        s.subjects = sub;
         s.total = total;
         s.percent = percent;
         s.grade = finalGrade;
         s.remark = remarks(finalGrade);
         students.push_back(s);
-    }
 
-     sort(students.begin(), students.end(), compareByPercentage);
+    }
+    sort(students.begin(), students.end(), compareByPercentage);
+    cout << "\n\n===== TOP POSITION HOLDERS =====\n";
+    
+    int top = min(3, (int)students.size());
+    
+    for (int i = 0; i < top; i++){
+        cout << "\nPosition " << i + 1
+        << ": " << students[i].name
+        << " (" << students[i].percent << "%)";
+    }
+    cout << endl;
+    
+    cout << "\n\n===== ALL STUDENTS =====\n";
+    
+    for (const Student& s : students){
+        cout << "\n------------------------";
+        cout << "\nName: " << s.name;
+        cout << "\nSubjects: " << s.subjects;
+        cout << "\nTotal: " << s.total;
+        cout << "\nPercentage: " << s.percent << "%";
+        cout << "\nGrade: " << s.grade;
+        cout << "\nRemark: " << s.remark << "\n";
+    }
 
     return 0;
 }
