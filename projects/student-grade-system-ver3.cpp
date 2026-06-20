@@ -16,10 +16,8 @@ struct Student{
     char grade;
     string remark;
 };
-vector<Student> students;
 
-
-int getPositiveInt(string prompt){
+int getPositiveInt(const string& prompt){
     int value;
 
     cout << prompt;
@@ -63,7 +61,7 @@ float percentage(float total, int n){ // percentage
     return total / n ;
 }
 
-char grade(float percentage){ // grade
+char calculateGrade(float percentage){ // grade
     if (percentage >= 80)
         return 'A';
     else if (percentage >= 70)
@@ -99,6 +97,8 @@ bool compareByPercentage(const Student& a, const Student& b){
 
 int main(){
 
+    vector<Student> students;
+
     cout << fixed << setprecision(2);
 
     int n = getPositiveInt("How many students are there? ");
@@ -113,7 +113,7 @@ int main(){
         int sub = getPositiveInt("Enter number of subjects: ");
         float total = totalMarks(sub);
         float percent = percentage(total , sub);
-        char finalGrade = grade(percent);
+        char finalGrade = calculateGrade(percent);
 
         cout << "\nResult of " << name << ":" << endl;
         cout << "\n Subjects: " << sub; // number of subjects   
@@ -122,14 +122,8 @@ int main(){
         cout << "\nGrade: " << finalGrade; // grade
         cout << "\nRemarks: " << remarks(finalGrade) << endl; // remarks
 
-        Student s;
-        s.name = name;
-        s.subjects = sub;
-        s.total = total;
-        s.percent = percent;
-        s.grade = finalGrade;
-        s.remark = remarks(finalGrade);
-        students.push_back(s);
+        Student s = {name, sub, total, percent, finalGrade, remarks(finalGrade)};
+        students.emplace_back(s);
 
     }
     sort(students.begin(), students.end(), compareByPercentage);
