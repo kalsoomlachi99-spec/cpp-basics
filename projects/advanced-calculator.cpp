@@ -3,10 +3,9 @@
 using namespace std;
 int main(){
 
-    /*Building Up A Simple Calculator*/
+    /*Building Up Advanced Calculator*/
 
     double a , b ;
-    char op;
     char choice;
 
     do {
@@ -22,6 +21,8 @@ int main(){
     cout << "/  Division\n";
     cout << "%  Modulus\n"; 
     cout << "^  Power\n";
+    
+    char op;
 
     cout << "\nChoose an operator: ";
     cin >> op;
@@ -31,7 +32,7 @@ int main(){
 
     switch (op) {
     case  '+' :
-    cout << "Result: " << a << " + " << b << " = " << a+ b ;
+    cout << "Result: " << a << " + " << b << " = " << a + b ;
     break;
 
     case '-' :
@@ -82,7 +83,7 @@ int main(){
 
 } while (choice != 'n' && choice != 'N');
     
-    cout << "\nThanks for using a simple calculator!";
+    cout << "\nThanks for using advanced calculator!";
 
     return 0;
 }

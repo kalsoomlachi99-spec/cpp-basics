@@ -2,10 +2,9 @@
 using namespace std;
 
 int main(){
-
-    /*A complete ATM system implementation*/
-
-    cout<<"Welcome to the ATM System!"<<endl;
+     /*A complete ATM system implementation*/
+     
+     cout<<"Welcome to the ATM System!"<<endl;
 
     double balance = 1000.0; // Initial balance
     int choice;
