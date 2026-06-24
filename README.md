@@ -1,11 +1,10 @@
-# C++ Project Title
+# C++ Basics Title
 
 ## 📌 Description
-This project is written in C++ and demonstrates [briefly explain what your project does].
+This project is written in C++ and demonstrates [briefly explain cpp basics concepts].
 
 Example:
-This project calculates the roots of a quadratic equation using user input.
-
+This project include cpp-functions , conditional statements, number system converter (decimal number system to binary number system and binary number system to decimal number system)
 ---
 
 ## 🚀 Features
@@ -26,3 +25,9 @@ This project calculates the roots of a quadratic equation using user input.
 ### 1. Compile the code
 ```bash
 g++ main.cpp -o program
+
+---
+
+## Author
+
+-Kalsoom
