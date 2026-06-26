@@ -28,7 +28,6 @@ int main() {
     
     cout << "size of float: " << sizeof(float) << " bytes" << endl ; // 4 bytes
     
-    
     cout << "size of string: " << sizeof(string) << " bytes" << endl ; // 32 bytes
 
     return 0;
