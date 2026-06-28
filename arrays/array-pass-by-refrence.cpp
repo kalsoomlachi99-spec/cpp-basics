@@ -10,6 +10,9 @@ void changeArray(int arr[] , int size){
 }
 
 int main() {
+
+    // Pass by refrence in arrays
+
     int size = 4;
     int arr[size] = {2, 4, 6, 8};
 
