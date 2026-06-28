@@ -9,6 +9,9 @@ void changeArray(int arr[] , int size){
     }
 }
 
+void line (){
+    cout << "------------------\n";
+} 
 int main() {
 
     // Pass by refrence in arrays
@@ -22,20 +25,20 @@ int main() {
         cout << "arr[" << i << "] = " << arr[i] << endl;
     }
 
-    cout << "------------------\n";
+    line();
 
     cout << "Elements of array in function: " << endl; 
     changeArray(arr , size); 
 
-    cout << "------------------\n";
+    line();
 
     cout << "Elements of array after function: " << endl;
 
     for (int i = 0; i < size; i++){
         cout << "arr[" << i << "] = " << arr[i] << endl;
     }
-    
-    cout << "------------------\n";
+
+    line();
     
     return 0;
 }
