@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+    
     // figure out how to find if a number is power of 2 
     /*using loop*/
 
@@ -14,6 +15,7 @@ int main() {
     cin >> num;
 
     for (int i = 1; i <= num; i++){
+
         int powOfTwo = pow(2, i) ;
         if (num == powOfTwo){
             cout << " Yes! " << num << " is the power of 2" << endl ;

@@ -174,17 +174,25 @@ int main(){
     // funtion call / invoke
  
  cout << "Minimum of " << a << " & " << b << " is: " << minOfTwoNumbers(a, b) << endl;  // min of two numbers
+ 
  cout << "sum of " << a << " & " << b << " = " << sumOfTwoNumbers(a, b) << endl; // sum of two numbers      
+ 
  cout << "Sum of numbers from 1 to" << a << " is: " << sumOfNum(a) << endl; // sum of numbers from 1 to n
+ 
  cout << "Factorial of " << a << " is " << nFact(a) << endl ;  // N factorial
+ 
  cout << "Sum of digits of " << b << " is " << sumOfDigit(b) << endl;  // sum of digits of a number
+ 
  cout << "Binomial coefficient of " << a << "&"  << b << " is " << nCR(a , b) << endl;  // nCr binomial coefficient for n and r (my version)
+ 
  cout << "Binomial coefficient of " << a << "&"  << b << " is " << nCr(a , b) << endl;  // nCr binomial coefficient for n and r
+ 
  cout << a << " is a " << prime(a) << " number " << endl; // prime number checker
+ 
  cout << "Sum of prime numbers from 2 to " << a << " is " << sumOfPrimes(a) << endl; // sum of n prime numbers
+ 
  cout << "The " << a << "th fibonacci number is " << fibonacci(a) << endl;  //  calculate nth fibonacci number
 
-
-
  return 0;
+
 }
