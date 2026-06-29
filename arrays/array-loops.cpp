@@ -10,11 +10,11 @@ int main() {
 
     cout << "Enter integer elements of array (size = 5): ";
 
-    for (int i = 0; i <= 4; i++){
+    for (int i = 0; i < 4; i++){
         cin >> arr[i];
     }
     cout << "Elements of array: " << endl;
-    for (int i = 0; i <= 4; i++){
+    for (int i = 0; i < 4; i++){
         cout << "arr[" << i << "] = " << arr[i] << endl;
     }     
 
