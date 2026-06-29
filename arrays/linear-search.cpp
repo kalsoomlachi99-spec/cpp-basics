@@ -16,12 +16,6 @@ void input(int arr[], int size){
     } 
 }
 
-void output(int arr[] , int size){
-    for (int i = 0; i < size; i++){
-        cout << "arr[" << i << "] = " << arr[i] << endl;
-    }  
-}
-
 void line(){
     cout << "\n-----------------------\n";
 }
