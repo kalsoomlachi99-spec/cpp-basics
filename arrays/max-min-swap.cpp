@@ -60,7 +60,9 @@ void swapMaxMin(){
     cin >> size;
 
     while (size <= 0 || size > MAX_SIZE){
-        cout << "Invalid array size!";
+        cout << "Invalid array size!\n";
+        cout << "Please enter between 0 & 100\n";
+        cout << "Enter again: ";
         cin >> size;
     }
     
