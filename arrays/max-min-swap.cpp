@@ -48,10 +48,8 @@ int minimum(int arr[], int size){
     return mini;
 }
 
-int main() {
-
-    // Swap the maximun and minimum numbers of an array
-
+void swapMaxMin(){
+    
     const int MAX_SIZE = 100;
     int size = MAX_SIZE;
     int arr[MAX_SIZE];
@@ -61,9 +59,9 @@ int main() {
     cout << "Enter size of an array: " ;
     cin >> size;
 
-    if (size <= 0 || size > MAX_SIZE){
+    while (size <= 0 || size > MAX_SIZE){
         cout << "Invalid array size!";
-        return 0;
+        cin >> size;
     }
     
     cout << "Enter integer elements of an array: " ;
@@ -88,6 +86,14 @@ int main() {
     cout << "Minimum: " << min << endl;
     
     line();
+    
+}
+
+int main() {
+
+    // Swap the maximun and minimum numbers of an array
+
+    swapMaxMin();
     
     return 0;
 }
