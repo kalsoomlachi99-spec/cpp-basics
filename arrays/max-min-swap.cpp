@@ -31,9 +31,8 @@ int maximum(int arr[], int size){
 
 int minimum(int arr[], int size){
     int mini = INT_MAX;
-    int i;
 
-    for (i = 0; i < size; i++){
+    for (int i = 0; i < size; i++){
         mini = min(mini, arr[i]);
     }
     
@@ -68,6 +67,7 @@ void swapMaxMin(){
     
     cout << "Enter integer elements of an array: " ;
     input(arr , size);
+
     line();
 
     int max = maximum(arr , size);
