@@ -69,7 +69,7 @@ int main() {
 
     cout << "===== Capacity Function =====" << endl;
 
-    cout << "Capacity is: " << vec.capacity() << endl;
+    cout << "Capacity is: " << vec.capacity() << endl; // capabilty to store value
     
     return 0;
 }
