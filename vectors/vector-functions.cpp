@@ -12,18 +12,18 @@ int main() {
 
     vector <int> vec;
 
-    cout << "\n===== Initial Stage =====\n" << endl;
+    cout << "===== Size Function =====" << endl;
 
-    cout << "Initial size = " << vec.size() << endl;
+    cout << "Size = " << vec.size() << endl;
 
     line();
 
-    cout << "\n===== Push Back Function =====\n" << endl;
+    cout << "===== Push Back Function =====" << endl;
 
-    vec.push_back(23);
-    vec.push_back(45);
-    vec.push_back(56);
-    vec.push_back(67);
+    vec.push_back(3);
+    vec.push_back(5);
+    vec.push_back(6);
+    vec.push_back(7);
 
     cout << "values after push back function: ";
     for (int val : vec){
@@ -35,7 +35,7 @@ int main() {
 
     line();
 
-    cout << "\n===== Pop Back Function =====\n" << endl;
+    cout << "===== Pop Back Function =====" << endl;
 
     vec.pop_back();
 
@@ -49,23 +49,27 @@ int main() {
 
     line();
 
-    cout << "\n===== Front Function =====\n" << endl;
+    cout << "===== Front Function =====" << endl;
 
     cout << "first value: " << vec.front() << endl;  // first value of a vector
 
     line();
 
-    cout << "\n===== Back Function =====\n" << endl;
+    cout << "===== Back Function =====" << endl;
 
     cout << "last value: " << vec.back() << endl;  // last value of a vector
 
     line();
 
-    cout << "\n===== At Function =====\n" << endl;
+    cout << "===== At Function =====" << endl;
     
     cout << "value at index 2: " << vec.at(2) << endl;   // value at index
 
     line();
+
+    cout << "===== Capacity Function =====" << endl;
+
+    cout << "Capacity is: " << vec.capacity() << endl;
     
     return 0;
 }
