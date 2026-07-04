@@ -20,9 +20,12 @@ int main() {
 
     cout << "===== Push Back Function =====" << endl;
 
+    vec.push_back(1);
+    vec.push_back(2);
     vec.push_back(3);
+    vec.push_back(4);
     vec.push_back(5);
-    vec.push_back(6);
+
 
     cout << "values after push back function: ";
     for (int val : vec){
@@ -68,7 +71,7 @@ int main() {
 
     cout << "===== Capacity Function =====" << endl;
 
-    cout << "Capacity is: " << vec.capacity() << endl; // capabilty to store value
+    cout << "Capacity is: " << vec.capacity() << endl; // how many elements can be stored in a vector
     
     return 0;
 }
