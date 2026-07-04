@@ -12,7 +12,7 @@ int main() {
 
     vector <int> vec;
 
-    cout << "===== Size Function =====" << endl;
+    cout << "\n===== Size Function =====" << endl;
 
     cout << "Size = " << vec.size() << endl;
 
@@ -23,7 +23,6 @@ int main() {
     vec.push_back(3);
     vec.push_back(5);
     vec.push_back(6);
-    vec.push_back(7);
 
     cout << "values after push back function: ";
     for (int val : vec){
@@ -63,7 +62,7 @@ int main() {
 
     cout << "===== At Function =====" << endl;
     
-    cout << "value at index 2: " << vec.at(2) << endl;   // value at index
+    cout << "value at index 2: " << vec.at(1) << endl;   // value at index
 
     line();
 
