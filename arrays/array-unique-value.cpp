@@ -17,20 +17,19 @@ void input(int arr1[], int arr2[], int size1, int size2){
     } 
 }
 
-void uniq(int arr1[], int arr2[], int size1, int size2){  // -> not correct still need workt6y
+void uniq(int arr[], int size){  // -> not correct still need workt6y
  
     cout << " ===== Unique Value ===== " << endl;
 
     bool isUnique;
     int uni;
 
-    for (int i = 0; i < size1; i++){
+    for (int i = 0; i < size; i++){
         isUnique = false;
-
-        for (int j = 0; j < size2; j++){
-            if (arr1[i] == arr2[j]){
+        for (int j = i; j < size; j++){
+            if (arr[i] == arr[j]){
                 isUnique = true;
-                uni = arr1[i];
+                uni = arr[i];
             }
         }
     }
@@ -60,7 +59,7 @@ int main() {
 
     cout << " ===== Unique Value ===== " << endl;
 
-    uniq(arr1, arr2, size1, size2);
+    uniq(arr1, size2);
 
     return 0;
 }
