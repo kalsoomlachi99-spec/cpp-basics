@@ -3,15 +3,17 @@
 using namespace std;
 
 vector <int> pairSum(vector <int> nums, int target){
-    int i = 0, j = nums.size() - 1;
     vector <int> ans;
-    while (i < j){
-        if(i == j){
-            ans.push_back(i);
-            ans.push_back(j);
-            return ans;
+    int n = nums.size() - 1;
+
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j <= n; j++) {
+            if (nums[i] + nums[j] == target) {
+                ans.push_back(i);
+                ans.push_back(j);
+                return ans;
+            }
         }
-    
     }
     return ans;
 }
@@ -22,7 +24,19 @@ int main() {
     vector <int> nums = {2, 7, 11, 15} ;
     int target = 9;
 
-    pairSum(nums, target);
+    vector <int> ans = pairSum(nums, target);
+
+    cout << "The numbers in the array are: ";
+    for (int i : nums) {    
+        cout << i << " ";
+    } 
+    cout << endl;   
+
+    cout << "The indices of the two numbers that add up to " << target << " are: ";
+
+    for (int i : ans) {
+        cout << i << " ";
+    }
 
     return 0;
 }
