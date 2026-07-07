@@ -19,7 +19,7 @@ vector <int> pairSum(vector <int> nums, int target){
 }
 
 int main() {
-    // two sum (pair sum) - brute force approach
+    // Two Sum (pair sum) - Brute Force Approach
     
     vector <int> nums = {2, 7, 11, 15} ;
     int target = 9;
