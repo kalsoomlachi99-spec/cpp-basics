@@ -20,13 +20,15 @@ void intersection(int arr1[], int arr2[], int size1, int size2){
 
 int main() {
    
+    // Point of  Intersection of Two Arrays
+
     int arr1[] = {2, 4, 8, 3, 5};
     int arr2[] = {1, 8, 4, 9};
 
     int size1 = sizeof(arr1) / sizeof(arr1[0]);
     int size2 = sizeof(arr2) / sizeof(arr2[0]);
 
-    cout << " ===== Point of Intersection of Two Arrays ===== " << endl;
+    cout << " ===== Point of Intersection ===== " << endl;
 
     cout << "first array is: ";
     for (int i = 0; i < size1; i++){
