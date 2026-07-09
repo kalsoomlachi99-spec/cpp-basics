@@ -21,8 +21,8 @@ vector <int> pairSum(vector <int> nums, int target){
 int main() {
     // Two Sum (pair sum) - Brute Force Approach
     
-    vector <int> nums = {2, 7, 11, 15} ;
-    int target = 9;
+    vector <int> nums = {3, 2, 4} ;
+    int target = 6;
 
     vector <int> ans = pairSum(nums, target);
 
@@ -37,6 +37,7 @@ int main() {
     for (int i : ans) {
         cout << i << " ";
     }
+    cout << endl;
 
     return 0;
 }
