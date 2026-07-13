@@ -26,12 +26,21 @@ vector <int> pairSum(vector <int> nums , int target){  // O(n)
 
 int main() {
 
-    //Two Sum -> Optimized brute force approach
+    //Two Sum -> Optimized Brute Force Approach
 
     vector <int> nums = {2, 7, 11, 15};
     int target = 26;
-    
     vector <int> ans = pairSum(nums , target);
+    
+    cout << "The numbers in the array are: ";
+    for (int i : nums) {    
+        cout << i << " ";
+    } 
+    cout << endl;  
+    
+    cout << "Target: " << target << endl;
+
+    cout << "The indices of the two numbers that add up to " << target << " are: ";
     cout << ans[0] << " , " << ans[1] << endl;
     
     return 0;
