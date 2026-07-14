@@ -121,7 +121,7 @@ int main(){
     if (num[0] == num[1] && num[1] == num[2]){
         cout << "All numbers are equal." << endl;
     } else if (num[0] == num[1]){
-        cout << "Only first two nubers equal." << endl;
+        cout << "Only first two numbers are equal." << endl;
     } else if(num[1] == num[2]){
         cout << "Only second and last numbers are equal." << endl;
     } else if(num[0] == num[2]){
@@ -129,6 +129,28 @@ int main(){
     } else {
         cout << "Not equal numbers." << endl;
     }
+
+    line();
+
+    // Trafic Light Signals
+
+    cout << " ====== Trafic Light Signals ====== " << endl;
+
+    char signal;
+    cout << "Enter the signal color (R for Red, Y for Yellow, G for Green): ";
+    cin >> signal;
+
+    if (signal == 'R' || signal == 'r') {
+        cout << "Stop" << endl;
+    } else if (signal == 'Y' || signal == 'y') {
+        cout << "Ready to move" << endl;
+    } else if (signal == 'G' || signal == 'g') {
+        cout << "Go" << endl;
+    } else {
+        cout << "Invalid signal color." << endl;
+    }
+
+    line();
 
   return 0;
 }
