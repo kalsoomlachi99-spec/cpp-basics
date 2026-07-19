@@ -9,7 +9,7 @@ int main() {
     // Majority Element -> Optimized Brute Force Approach
 
     vector <int> nums = {1, 2, 1, 2, 1};
-    int n = nums.size(), freq = 1;
+    int n = nums.size();
 
     // step 1: sorting
 
@@ -17,7 +17,8 @@ int main() {
 
     // step 2: frequency count
 
-    int ans = nums[0] ;
+    int freq = 1;
+    int ans = nums[0];
 
     for (int i = 0; i < n; i++){
         if(nums[i] == nums[i - 1]){
@@ -26,10 +27,11 @@ int main() {
             freq = 1;
             ans = nums[i];
         }
-        return ans;
+        if (freq > n/2){
+            return ans;
+        }
     }
 
     return ans;
-    
-    return 0;
+
 }
