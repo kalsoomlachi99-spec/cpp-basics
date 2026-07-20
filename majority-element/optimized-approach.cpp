@@ -39,7 +39,7 @@ int main() {
         }
     }
 
-    cout << "Majority Element: " << ans;
+    cout << "No Majority Element " << endl;
 
     return 0;
 
