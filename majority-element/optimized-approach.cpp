@@ -11,7 +11,7 @@ int main() {
     vector <int> nums = {1, 2, 1, 2, 1};
     int n = nums.size();
 
-    // Edge case: if vector has only 1 element, it is the majority element
+    // Edge case: if vector has only 1 element, it is the majority element  => {2}
     if (n == 1) {
         cout << "Majority Element: " << nums[0] << endl;
         return 0;
@@ -39,8 +39,23 @@ int main() {
         }
     }
 
-    cout << "No Majority Element " << endl;
+    // Majority Element (Variation) => {1, 2, 3, 4}
+
+    int count = 0;
+
+    for (int val : nums){
+
+        if (val == ans){
+            count ++;
+        }
+    }
+
+    
+    if(count > n/2){
+        cout << ans;
+    } else {
+        cout << "No Majority Element " << endl;
+    }
 
     return 0;
-
 }
