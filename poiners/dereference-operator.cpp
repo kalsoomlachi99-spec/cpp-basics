@@ -12,14 +12,11 @@ int main (){
     cout << " ====== Dereference Operator (*) ====== " << endl; 
 
     cout << "a = " << a << endl; // 307
-
     cout << "*(&a) : " << *(&a) << endl; // 307 
-
-    cout << "*(ptr) : " << *(ptr) << endl; // 307 
-    
+    cout << "*ptr : " << *ptr << endl; // 307 
     cout << "*(&ptr) : " << *(&ptr) << endl; // address of a
-    
-    cout << "*(parPtr) : " << *(parPtr) << endl; // value of ptr (address of a)
+    cout << "*parPtr : " << *parPtr << endl; // value of ptr (address of a)
+    cout << "**parPtr : " << **parPtr << endl; // value of a
 
     return 0;
 }
