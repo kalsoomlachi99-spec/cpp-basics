@@ -1,83 +1,111 @@
-# C++ Basics
+# C++ LeetCode Problems
 
-A collection of beginner-friendly C++ programs covering core programming concepts, problem-solving techniques, and fundamental computer science topics.
+Welcome to my **C++ LeetCode Solutions** repository!
 
-## About
+This repository contains my solutions to LeetCode problems as I progress through my Data Structures & Algorithms (DSA) journey. The main purpose of this repository is to improve my problem-solving skills, strengthen my understanding of algorithms, and track my coding progress.
 
-This repository contains programs created while learning and practicing C++. The goal is to build a strong foundation in programming by understanding fundamental concepts and applying them through hands-on exercises.
+---
 
-Each folder focuses on a specific topic and contains examples that demonstrate important programming principles.
+## 📌 About
 
-## Topics Covered
+* 💻 Language: **C++**
+* 🧠 Platform: **LeetCode**
+* 🎯 Goal: Improve problem-solving and prepare for technical interviews.
+* 📈 Repository is updated regularly as I solve new problems.
 
-### Conditional Statements
+---
 
-* if
-* if-else
-* nested if-else
-* decision-making logic
+## 📂 Repository Structure
 
-### Functions
+Each problem is stored in its own folder. Depending on the problem, you may find one or more approaches, such as:
 
-* function declaration and definition
-* parameter passing
-* return values
-* code modularity
+* Brute Force
+* Better Approach
+* Optimal Approach
 
-### Number System Converter
-
-* Decimal to Binary conversion
-* Binary to Decimal conversion
-* Binary input validation
-
-## Repository Structure
+Example:
 
 ```text
-cpp-basics/
-├── cpp-conditional-statement/
-│   └── if_else.cpp
+cpp-leetcode-problems/
 │
-├── cpp-functions/
-│   └── functions.cpp
+├── Two Sum/
+│   ├── brute-force.cpp
+│   └── optimal.cpp
 │
-├── number-system-converter/
-│   └── binary-number-system.cpp
+├── Valid Palindrome/
+│   └── solution.cpp
+│
+├── Product of Array Except Self/
+│   ├── brute-force.cpp
+│   ├── better.cpp
+│   └── optimal.cpp
 │
 └── README.md
 ```
 
-## Learning Objectives
+---
 
-* Understand fundamental C++ concepts
-* Improve logical thinking and problem-solving skills
-* Practice writing clean and organized code
-* Build a strong foundation for advanced C++ projects
+## 🚀 Topics Covered
 
-## Technologies Used
-
-* C++
-* Visual Studio Code
-* Git
-* GitHub
-
-## Future Topics
-
-As I continue learning C++, this repository may be expanded with:
+As I continue solving problems, this repository will include topics such as:
 
 * Arrays
 * Strings
-* Structures
-* Pointers
-* File Handling
-* Object-Oriented Programming (OOP)
-* Data Structures and Algorithms
-
-## Author
-
-**Kalsoom  **
-
-GitHub: https://github.com/kalsoomlachi99-spec
+* Hashing
+* Two Pointers
+* Sliding Window
+* Binary Search
+* Sorting
+* Recursion
+* Linked Lists
+* Stacks
+* Queues
+* Trees
+* Binary Search Trees
+* Heaps
+* Graphs
+* Dynamic Programming
+* Greedy Algorithms
+* Backtracking
+* Bit Manipulation
+* Mathematics
 
 ---
 
-⭐ If you find these examples helpful, consider giving the repository a star.
+## 🎯 Objectives
+
+* Practice solving LeetCode problems consistently.
+* Learn multiple approaches to the same problem.
+* Write clean and readable C++ code.
+* Understand time and space complexity.
+* Build a strong DSA foundation.
+
+---
+
+## 📚 Resources
+
+* LeetCode
+* C++ Standard Library (STL)
+* Data Structures & Algorithms
+
+---
+
+## 🤝 Contributions
+
+This repository is primarily for my personal learning journey. However, suggestions for improving code quality or optimizing solutions are always welcome.
+
+---
+
+## ⭐ If You Like This Repository
+
+If you find this repository helpful, consider giving it a ⭐ on GitHub.
+
+---
+
+## 👩‍💻 Author
+
+**Kalsoom**
+
+GitHub: https://github.com/kalsoomlachi99-spec
+
+Happy Coding! 🚀
