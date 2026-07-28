@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    // practice problem
+    /*Predict Output*/
+
+    int arr[] = {10, 20, 30, 40};
+    int* ptr = arr;
+
+    cout << "*(ptr + 1) : " << *(ptr + 1) << endl; // 20
+    cout << "*(ptr + 3) : " << *(ptr + 3) << endl; // 40
+
+    ptr ++;
+
+    cout << "*ptr after ptr ++ : " <<  *ptr << endl; // 20
+
+    return 0;
+}
