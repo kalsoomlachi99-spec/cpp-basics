@@ -6,7 +6,7 @@ void changeA(int* ptr) { // using pointer as parameter
     *ptr = 330; // Change the value of 'a' using pointer
 }
 
-void changeAAlias(int &b){ // using reference as parameter
+void changeAAlias(int &b){ // using reference as parameter =>don't make a copy—let b refer to the original variable that was passed to the function.
     b = 313; // Change the value of 'a; using alais => alternative name for 'a'
 }
 
