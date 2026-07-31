@@ -25,7 +25,7 @@ int main() {
     
     /*Binary Search*/
 
-    // Iterative method
+    // Iterative method : Time Complexity => O(logn) , Space Complexity => O(1)
 
     vector <int> nums1 = {-1, 0, 3, 4, 5, 9, 12}; // odd
     int target1 = 14;
