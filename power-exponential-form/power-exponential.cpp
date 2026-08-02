@@ -4,11 +4,11 @@ using namespace std;
 
 double myPow(double x, int n){
 
-    if(n == 0) return 1; // x^0 = 1
-    if(x == 1) return 1; // 1^n = 1
-    if(x == 0) return 0; // 0^n = 0
-    if(x == -1 && n % 2 == 0) return 1; // even power absorbs negative sign
-    if(x == -1 && n % 2 != 0) return -1; // odd power remains negative sign
+    if(n == 0) return 1.0; // x^0 = 1
+    if(x == 1) return 1.0; // 1^n = 1
+    if(x == 0) return 0.0; // 0^n = 0
+    if(x == -1 && n % 2 == 0) return 1.0; // even power absorbs negative sign
+    if(x == -1 && n % 2 != 0) return -1.0; // odd power remains negative sign
 
     long binForm = n;
     double ans = 1;
@@ -32,6 +32,7 @@ int main() {
     
     /*Power Exponential Problem*/
     // Time Complexity => O(logn)
+    // leetcode 50
 
     double x = 3 ;
     int n = 5;
