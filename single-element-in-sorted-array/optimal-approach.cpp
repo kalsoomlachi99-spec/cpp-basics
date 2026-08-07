@@ -40,7 +40,7 @@ int main (){
     /*Single Element In a Sorted Array*/
     // LeetCode 540 - Binary Search O(log n)
 
-    vector <int> arr = {1,1,2,3,3,4,4,8,8};
+    vector <int> arr = {1, 1, 2, 3, 3, 4, 4, 8, 8};
 
     cout << "Single element in sorted array is: " << singleElementInSortedArray(arr) << endl; // output 2
 
