@@ -33,9 +33,21 @@ int main() {
     }
     cout << endl;
     
-    cout << "Size after push backc function = " << vec.size() << endl;
+    cout << "Size after push back function = " << vec.size() << endl;
 
     line();
+
+    cout << "===== Emplace Back Function =====" << endl;
+
+    vec.emplace_back(6);
+
+    cout << "values after emplace back function: ";
+    for (int val : vec){
+        cout << val << " ";
+    }
+    cout << endl;
+    
+    cout << "Size after emplace back function = " << vec.size() << endl;
 
     cout << "===== Pop Back Function =====" << endl;
 
@@ -71,7 +83,9 @@ int main() {
 
     cout << "===== Capacity Function =====" << endl;
 
-    cout << "Capacity is: " << vec.capacity() << endl; // how many elements can be stored in a vector
+    cout << "Capacity is: " << vec.capacity() << endl; // how many elements can be currently stored in a vector
+
+    line();
     
     return 0;
 }
