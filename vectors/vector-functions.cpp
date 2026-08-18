@@ -77,13 +77,27 @@ int main() {
 
     cout << "===== At Function =====" << endl;
     
-    cout << "value at index 2: " << vec.at(1) << endl;   // value at index
+    cout << "value at index 2: " << vec.at(2) << endl;   // value at index
 
     line();
 
     cout << "===== Capacity Function =====" << endl;
 
     cout << "Capacity is: " << vec.capacity() << endl; // how many elements can be currently stored in a vector
+
+    line();
+
+    cout << "===== Erase Function =====" << endl;
+
+    vec.erase(vec.begin() + 1); // erase the value at index 1
+
+    cout << "values after erase function: ";
+    for (int val : vec){
+        cout << val << " ";
+    }
+    cout << endl;
+    
+    cout << "Size after erase function = " << vec.size() << endl;
 
     line();
     
