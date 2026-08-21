@@ -113,13 +113,42 @@ int main() {
 
     cout << "===== Insert Function =====" << endl;
     
-    vec.insert(vec.begin()+3, 307); //(position, value) insert a value at a specific position
+    vec.insert(vec.begin()+1, 307); //(position, value) insert a value at a specific position
 
     cout << "values after insert function: ";
     for (int val : vec){
         cout << val << " ";
     }
     cout << endl;
+
+    line();
+
+    cout << "===== Begin Function =====" << endl;
+    
+    cout << "Vector.begin: " << *(vec.begin()) << endl;
+
+    line();
+
+    cout << "===== End Function =====" << endl;
+    
+    cout << "Vector.End: " << *(vec.end()) << endl;
+
+    line();
+
+    cout << "===== Clear Function =====" << endl;
+    
+    vec.clear(); //remove all values, size become 0 but the capacity not
+
+    cout << "Size after clear function: " << vec.size() << endl;
+    cout << "Capacity after clear function: " << vec.capacity() << endl;
+   
+    line();
+
+     cout << "===== Empty Function =====" << endl;
+    
+    cout << "Is vector empty: " << vec.empty() << endl;
+    
+    line();
     
     return 0;
 }
