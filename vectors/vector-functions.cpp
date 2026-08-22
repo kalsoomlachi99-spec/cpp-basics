@@ -91,7 +91,7 @@ int main() {
     cout << "===== Erase Function =====" << endl;
 
     //iterators -> works like a pointer but not a pointer
-    vec.erase(vec.begin()); // erase the value at index 1
+    vec.erase(vec.begin()); // erase the value at index 0
 
     cout << "values after erase function (specific index): ";
     for (int val : vec){
@@ -120,18 +120,6 @@ int main() {
         cout << val << " ";
     }
     cout << endl;
-
-    line();
-
-    cout << "===== Begin Function =====" << endl;
-    
-    cout << "Vector.begin: " << *(vec.begin()) << endl;
-
-    line();
-
-    cout << "===== End Function =====" << endl;
-    
-    cout << "Vector.End: " << *(vec.end()) << endl;
 
     line();
 
