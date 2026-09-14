@@ -1,7 +1,10 @@
 #include <iostream>
 #include <cstring>
-
 using namespace std;
+
+void line () {
+    cout << "---------------------" << endl;
+}
 
 int main() {
     
@@ -12,9 +15,11 @@ int main() {
 
     cout << "Str1 = " << str1 << endl;
     cout << "Str1[0] = " << str1[0] << endl;
+    line();
 
     cout << "Str2 = " << str2 << endl;
     cout << "Size of str2 = " << strlen(str2) << endl;
+    line();
 
     /*Input & Output*/ 
 
@@ -25,6 +30,7 @@ int main() {
     cin.getline(str3, 100);
 
     cout << "Output : " << str3 << endl;
+    line();
 
     return 0;
 }
