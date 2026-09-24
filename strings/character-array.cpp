@@ -23,13 +23,19 @@ int main() {
 
     /*Input & Output*/ 
 
-    char str3[100];
+    char str3[11];
 
     cout << "Enter character array : " ;
     // cin >> str3; will input only a single word without space
-    cin.getline(str3, 100);
+    cin.getline(str3, 11);
 
-    cout << "Output : " << str3 << endl;
+    // cout << "Output : " << str3 << endl; // method 1
+
+    for(char val: str3){ // method 2
+        cout << val << " ";
+    }
+    cout << endl;
+
     line();
 
     return 0;
