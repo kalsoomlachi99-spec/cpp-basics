@@ -18,7 +18,6 @@ int main() {
     line();
 
     cout << "Str2 = " << str2 << endl;
-    cout << "Size of str2 = " << strlen(str2) << endl;
     line();
 
     /*Input & Output*/ 
@@ -36,6 +35,20 @@ int main() {
     }
     cout << endl;
 
+    line();
+
+    // calculate length 
+
+    char str4[] = {'m', 'a', 'n', 'a', 'l'};
+    int len = 0;
+
+    cout << "Length of str4 method 1 = " << strlen(str4) << endl; 
+
+    for (int i = 0; i < str4[i] != '\0'; i++) {
+        cout << str4[i] << " " << len << endl;
+        len ++;
+    }
+    cout << "Length of str4 method 2 = " << len << endl;
     line();
 
     return 0;
