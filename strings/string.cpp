@@ -21,7 +21,7 @@ int main() {
 
     string str4;
     // cin >> str4; // ingnore input after white spaces
-    getline(cin, str4, '.'); // delimiter
+    getline(cin, str4); // delimiter
     cout << "Output: " << str4 << endl;
 
     return 0;
