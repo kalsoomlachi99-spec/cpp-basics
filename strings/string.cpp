@@ -19,6 +19,7 @@ int main() {
 
     cout << (str1 == str2) << endl; // comaparsion
     cout << (str1 < str2) << endl; 
+    line();
 
     cout << "Length of str1 = " << str1.length() << endl; // lenght
     line();
@@ -35,8 +36,12 @@ int main() {
 
     string str5 = {"Hello World!"};
 
-    for (int i = 0; i < str5.length() - 1; i++) { // for loop
-        cout << str5[i] << " ";
+    // for (int i = 0; i < str5.length() - 1; i++) { // for loop
+    //     cout << str5[i] << " ";
+    // }
+
+    for (char ch : str5){
+        cout << ch << " ";
     }
     cout << endl;
     line();
