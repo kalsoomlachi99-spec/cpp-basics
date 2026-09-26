@@ -11,6 +11,9 @@ int main() {
     string str3 = str1 + str2; // concatenation
 
     cout << str3 << endl;
+     
+    cout << (str1 == str2) << endl; // comaparsion
+    cout << (str1 < str2) << endl; 
 
     return 0;
 }
