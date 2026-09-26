@@ -17,5 +17,11 @@ int main() {
 
     cout << "Length of str1 = " << str1.length() << endl; // lenght
 
+    // Input and Output
+
+    string str4;
+    cin >> str4; // ingnore input after white spaces
+    cout << "Output: " << str4 << endl;
+
     return 0;
 }
