@@ -15,5 +15,7 @@ int main() {
     cout << (str1 == str2) << endl; // comaparsion
     cout << (str1 < str2) << endl; 
 
+    cout << "Length of str1 = " << str1.length() << endl; // lenght
+
     return 0;
 }
